@@ -1,0 +1,13 @@
+-- Git e GitHub
+
+
+Git é um VCS (Version Control Syntem)
+
+1. Nos deixa organizar o trabalho em equipe, mantendo as 
+alterações nos arquivos em um servidor específico para isso;
+
+2. Permite o armazenamento e acesso a um histórico de modificações.
+
+
+Git init --> iniciar um repositório do Git 
+	
