@@ -9,5 +9,22 @@ alterações nos arquivos em um servidor específico para isso;
 2. Permite o armazenamento e acesso a um histórico de modificações.
 
 
-Git init --> iniciar um repositório do Git 
+COMANDOS
+CONFIGURAÇÕES INICIAIS
+git config --global user.name "Felipe Rosa"
+git config --global email.name "frbmoraisaero@gmail.com"
+
+git init --> iniciar/criar novo repositório git
+
+git status --> Verificar estado dos arquivos diretórios
+
+git add nome_do_arquivo.txt --> adicionar arquivo/diretório (staged area)
+git rm -r nome_do_arquivo.txt --> remove arquivo/diretório 
+
+git add . --> adicionar todos os aruqivos/diretóorios
+
+git commit -m "minha mensagem de commit" --> comita o arquivo/diretório
+
+git log --> visualizar histórico
 	
+
