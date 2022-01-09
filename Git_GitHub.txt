@@ -7,12 +7,14 @@ Git é um VCS (Version Control Syntem)
 alterações nos arquivos em um servidor específico para isso;
 
 2. Permite o armazenamento e acesso a um histórico de modificações.
+
 ----------------------------------------------------------------------------
 COMANDOS
 ----------------------------------------------------------------------------
 CONFIGURAÇÕES INICIAIS
 git config --global user.name "Felipe Rosa"
 git config --global email.name "frbmoraisaero@gmail.com"
+
 ----------------------------------------------------------------------------
 COMANDOS BÁSICOS
 ----------------------------------------------------------------------------
@@ -41,9 +43,48 @@ HEAD --> Eestado atual do nosso código, ou sej,a onde o Hit os colocou;
 WORKING --> Local onde os arquivos realmente estão sendo armazenados e editados;
 INDEX --> Local onde o git armazena o que será commitado, ou seja,
 o local entre a working tree e o repositório Git em si.
+
 ----------------------------------------------------------------------------
+.gitignore --> ignorando arquivos
+----------------------------------------------------------------------------
+o arquivo especial .gitignore serve para guardar tudo que deve ser ignorado
+nome_do_arquivo
+pasta_ignorada/
+devemos adicionar o arquivo .gitignorado depois acioná-lo e commita-lo
+
+----------------------------------------------------------------------------
+CONTROLE E COMPARTILHAMENTO DO CÓDIGO
+----------------------------------------------------------------------------
+git init --bare --> inicializa um repositório git puro, não contém fisicamente 
+os arquivos, somente as alterações, servidor geral.
+
+git remote --> Lista todos os repositórios remotos que meu repositório atual reconhece
+
+git remote add <nome da pasta remota/servidor> <endereço da pasta/servidor> 
+OBS: <endereço da pasta/ servidor> --> pode ser uma pasta no nosso computador, 
+pode ser uma url de um servidor remoto, qualquer endereço valido para um repositório git
+
+git clone <endereço_do_diretório_clonado> <nome_do_diretório_criado> --> 
+clona os dados do endereço
+
+git push <diretório_remoto> <branch_de_trabalho (master)> --> envia os dados do diretório remoto
+
+git pull <diretório_remoto> <branch_de_trabalho (master)> --> pega os dados do diretório remoto
 
 
+
+----------------------------------------------------------------------------
+GITHUB
+----------------------------------------------------------------------------
+git remote add origin https://github.com/FRBMorais/<repositório>.git
+
+git push origin master --> origin => repositório, master => qual a branch quero enviar
+(irá aparecer uma validação login e senha do github)
+
+
+----------------------------------------------------------------------------
+Trabalhando em equipe
+----------------------------------------------------------------------------
 
 
 	
