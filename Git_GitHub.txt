@@ -83,9 +83,73 @@ git push origin master --> origin => repositório, master => qual a branch quero
 
 
 ----------------------------------------------------------------------------
-Trabalhando em equipe
+Trabalhando em equipe --> https://git-school.github.io/visualizing-git/  
+--> permite uma visualização das branchs e como funcionam
 ----------------------------------------------------------------------------
+Branches --> galhos, por padrão inicialmente temos apenas um.
+
+git branch <nome_branch> --> crie uma nova branch, linha de desenvolvimento
+
+git checkout <nome_branch> --> muda para a branch selecionada
+
+git checkout -b branch '<nova_branch>' --> cria uma branch e ja muda para ela
+
+git merge <branch_a_ser_integralizada> --> estou na branch master e quero trazer uma branch, unindo as branchs
+
+git rebase <branch_baseada> --> pega minha branch atual e leva para o último commit da branch baseada
+
+git log --graph --> mostra graficamente as linhas de desenvolvimento
+
+CONFLITOS --> primeiro se resolvem os conflitos, e posteriormente é permitida o merge ou rebase
+:x p/ sair da tela de mensagem de conflito
+
+depois de resolveidos os conflitos podemos fazer um git add e posteriomente um git commit 
+para que o merge ou rebase seja realizado com sucesso
+
+----------------------------------------------------------------------------
+Manipulando as versões
+----------------------------------------------------------------------------
+Antes de fazer o git add, podemos desfazer o que ja fo feito
+comando
+git checkout -- <nome do arquivo a ser dado o ctrl + z>
+
+Depois de adicionar, podemos desfazer utilizando
+
+git reset HEAD <nome do arquivo>
+
+depois de adicionar e commitar, podemos desfazer um commit utilizando
+
+git revert <HASH do commit a ser desfeito> --> depois utilizamos :x para sair
+
+git stash --> salva temporariamente os arquivos
+git stash list --> podemos ver uma lista dos stashs
+git stash apply <número da stash> --> aplica na nossa HEAD as alterações temporárias salvas
+git stash drop --> apaga a lista de stashs
+git stash pop --> faz o merge já apagando a lista de stash 
+
+git checkout <HASH desejada> --> permite que vc volte a um dado commit, de maneira desanexada das minhas linhas de desenvolvimento
+OBS: para salvar as alterações a partir dessa HEAD, devemos criar uma nnova branch
+
+----------------------------------------------------------------------------
+Visualizando as alterações
+----------------------------------------------------------------------------
+git diff <HASH1>..<HASH2> --> mostra a diferença entre as duas hashs
+
+git diff --> mostra a diferença entre o hed e o nosso último commit
+
+git tag -a <nonme_da_versao> -m "mensagem" --> gerei uma tag, um marco na nossa aplicação
+sai das branchs e cria um ponto específico, que pode ser enviado para o nosso repositório remoto
 
 
+
+
+
+
+
+
+
+
+
+		
 	
 
