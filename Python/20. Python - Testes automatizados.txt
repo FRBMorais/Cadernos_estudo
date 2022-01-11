@@ -1,0 +1,84 @@
+/------------------------------------/
+/          Aplicação WEB             /
+/------------------------------------/
+/            frontend                / 
+/             backend                /
+/------------------------------------/
+/       testes automatizados         /
+/------------------------------------/
+
+
+Motivos para testar nosso código
+1. Reduzir bugs no código existente;
+2. Garantem que novos recursos da aplicação nao quebrem recursos antigos;
+3. Garantem que bugs que foram corrigidos anteriormente não retornem;
+4. Garantem que a refatoração que costumamos fazer não tragam novos bugs;
+
+TDD - Test Driven Development (Desenvolvimento guiado por Testes)
+--> Primeiro escrevemos nosso código;
+--> Escreve a menor quantidade possível para o teste ser positivo;
+--> Então refatora o código para realizar a funcionalidade e testa novamente;
+--> Se o teste for positivo, o recurso é considerado completo.
+
+São princípios que os desenvolvedores seguem:
+- Red;
+- Green;
+- Refactor;
+
+---------------------------------------------------------------------------------
+Assertions (Checagens/ Questionamentos / Afirmações)
+
+assert --> Simples afirmações utilizadas nos testes, validação de uma expressão
+	True --> retorna None
+	False --> retorna um erro do tipo AssertionError
+	OBS: podemos personalizar esse erro
+
+syntax
+assert <expressão lógica>, '<mensagem que retornará no erro caso falso>'
+
+exemplo:
+def soma_numeros_positivos(a, b):
+	assert a > 0 and b > 0, 'ambos números precisam ser positivos'
+	return a + b
+
+OBS: códigos executados utilizando a flag -O não levaram em consideração os asserts
+Exemplo: python -O nome_do_scrip.py
+
+
+------------------------------------------------------------------------------------
+Doctests
+------------------------------------------------------------------------------------
+Doctests são testes dentro das docstring s das funções/métodos Python
+p/ rodar um doctest, temos que fazer no terminal
+python -m doctest -v <nome_do_modulo>.py
+
+exemplo:
+def soma(a, b):
+    """soma os números a e b
+    >>> soma(1, 2)
+    3
+    """
+    return a + b
+
+Peculiaridades esquisitas 
+OBS: Dentro do doctest o  python nao reconhece string com aspas duplas, precisa ser aspas simples
+OBS: Espaços e tabs podem fazer o teste falhar (Pycharm corrige isso, outros não)
+
+------------------------------------------------------------------------------------
+Introdução ao módulo Unittest
+------------------------------------------------------------------------------------
+
+Unittest --> Testes unitários
+
+Teste unitário é a forma de se testar unidades individuais de código fonte.
+
+Unidades individuais podem ser: funções, métodos, classes, módulos etc.
+
+Objetivo: Mostrar que cada unidade atende corretamente suas especificações
+
+OBS: Teste unitário não é específico da linguagem Python
+------------------------------------------------------------------------------------
+
+
+
+
