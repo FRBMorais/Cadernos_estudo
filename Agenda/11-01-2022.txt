@@ -1,10 +1,10 @@
 
-1:30 --> 2:50
+1:30 --> 2:50   13:00 --> 13:50
 Testes com Python -- 4 horas
 --> Por que testar nosso código ok
 --> Assertions (Afirmações) ok 
 --> Doctests ok
---> Introdução ao módulo Unnittest
---> Outros tipos de assertions
---> Antes e após hooks
---> Recaptulando
+--> Introdução ao módulo Unnittest ok
+--> Outros tipos de assertions ok
+--> Antes e após hooks ok 
+--> Recaptulando ok 

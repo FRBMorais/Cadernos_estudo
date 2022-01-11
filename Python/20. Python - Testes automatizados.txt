@@ -77,7 +77,70 @@ Unidades individuais podem ser: funções, métodos, classes, módulos etc.
 Objetivo: Mostrar que cada unidade atende corretamente suas especificações
 
 OBS: Teste unitário não é específico da linguagem Python
-------------------------------------------------------------------------------------
+
+
+
+
+O teste é independente da nossa aplicação, um arquivo separado testes.py
+----------------------- testes.py ----------------------------------------------------
+import unittest
+
+from <nome_da_modulo_testado> import <unidades>
+exemplo.
+from atividades import comer, dormir  # onde comer e dormir são funções do módulo atividades
+
+class <Nome_módulo>Testes(unittest.TestCase):  # TestCase, possui os assertions que vamos herdar
+    
+    def setUp(self):  # Setup dos testes1, 2, ..., n  # Evita repetição de código
+ 	"""
+	Podemos instanciar uma classe com os parâmetros desejados, por exemplo
+        """
+        pass
+
+    def test_<unidade>(self):  # Teste1
+        self.assertEqual(
+	     <unidade>(parâmetros), <resposta esperada>
+	)
+
+    def test_<unidade>(self):  # Teste2
+        self.assertEqual(
+	     <unidade>(parâmetros), <resposta esperada>
+	)
+    def tearDown(self):  # Setup final dos testes  # Evita repetição de código
+ 	"""
+	Podemos fechar um banco de dados, ou zerar alguma variável 
+        """
+        pass
+
+Tabela de assertions  https://docs.python.org/3/library/unittest.html
+assertEqual(a, b)    <---------------------->          a == b
+assertNotEqual(a, b) <---------------------->          a != b
+assertTrue(x)	     <---------------------->          bool(x) is True
+assertFalse(x)	     <---------------------->          bool(x) is False
+assertIs(a, b)	     <----------------------> 	       a is b
+assertIsNot(a, b)    <---------------------->          a is not b
+assertIsNone(x)      <---------------------->          x is None
+assertIsNotNone(x)   <---------------------->          x is not None
+assertIn(a, b)       <---------------------->          a in b
+assertNotIn(a, b)    <---------------------->          a not in b
+assertIsInstance(a, b)    <---------------------->     isinstance(a, b)
+assertNotIsInstance(a, b) <---------------------->     not isinstance(a, b)
+
+
+if __name__ == '__main__':         # --> No terminal o programa irá ser testado se executarmos como main 
+    unittest.main()
+
+Como rodar os testes no terminal 
+
+python nome_do_modulo.py
+python nome_do_modulo.py -v  # --> de forma detalhada
+
+OBS: interessante colocar docstrings nos testes
+
+
+
+
+
 
 
 
