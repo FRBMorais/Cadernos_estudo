@@ -1,5 +1,5 @@
 
-1:30 --> 2:50   13:00 --> 13:50
+1:30 --> 2:50   13:00 --> 14:05
 Testes com Python -- 4 horas
 --> Por que testar nosso código ok
 --> Assertions (Afirmações) ok 
@@ -8,3 +8,29 @@ Testes com Python -- 4 horas
 --> Outros tipos de assertions ok
 --> Antes e após hooks ok 
 --> Recaptulando ok 
+
+
+Prova de Psicologia  14:15 15:10
+Questões 
+1  ok
+2  ok
+3  ok
+4  ok
+5  ok
+6  ok
+7  ok
+8  ok
+
+Estágio rever a última reunião
+--> Organizar as terafas que tenho que fazer p/ sexta não ok
+
+
+Projetos2
+--> Estudar o modelo de viga para a asa da nossa aeronave não ok 
+--> Levantar o que tem que ser feito não ok
+
+Otimização 17:20  18:10
+--> Montar uma apresentação não ok
+--> Subir o projeto 1 para o Github ok
+
+

@@ -1,0 +1,112 @@
+ABORT -- interrompe a transação corrente
+ALTER AGGREGATE -- altera a definição de uma função de agregação
+ALTER CONVERSION -- altera a definição de uma conversão de codificação
+ALTER DATABASE -- altera um banco de dados
+ALTER DOMAIN --  altera a definição de um domínio
+ALTER FUNCTION -- altera a definição de uma função
+ALTER GROUP -- altera o nome do papel ou ser membro do papel
+ALTER INDEX -- altera a definição de um índice
+ALTER LANGUAGE -- altera a definição de uma linguagem procedural
+ALTER OPERATOR -- altera a definição de um operador
+ALTER OPERATOR CLASS -- altera a definição de uma classe de operadores
+ALTER ROLE -- altera um papel do banco de dados
+ALTER SCHEMA -- altera a definição de um esquema
+ALTER SEQUENCE --  altera a definição de um gerador de seqüência
+ALTER TABLE -- altera a definição de uma tabela
+ALTER TABLESPACE -- altera a definição de um espaço de tabelas
+ALTER TRIGGER -- altera a definição de um gatilho
+ALTER TYPE --  altera a definição de um tipo
+ALTER USER -- altera um papel do banco de dados
+ANALYZE -- coleta estatísticas sobre o banco de dados
+BEGIN -- inicia um bloco de transação
+CHECKPOINT -- força um ponto de verificação no registro de transações
+CLOSE -- fecha o cursor
+CLUSTER -- agrupa a tabela de acordo com um índice
+COMMENT -- define ou muda o comentário sobre um objeto
+COMMIT -- efetiva a transação corrente
+COMMIT PREPARED -- efetiva uma transação previamente preparada para uma efetivação de duas fases
+COPY -- copia dados entre um arquivo e uma tabela
+CREATE AGGREGATE -- cria uma função de agregação
+CREATE CAST -- cria uma conversão de tipo de dado
+CREATE CONSTRAINT TRIGGER -- cria um gatilho de restrição
+CREATE CONVERSION -- cria uma conversão de codificação
+CREATE DATABASE -- cria um banco de dados
+CREATE DOMAIN -- cria um domínio
+CREATE FUNCTION -- cria uma função
+CREATE GROUP -- cria um papel do banco de dados
+CREATE INDEX -- cria um índice
+CREATE LANGUAGE -- cria uma linguagem procedural
+CREATE OPERATOR -- cria um operador
+CREATE OPERATOR CLASS -- cria uma classe de operadores
+CREATE ROLE -- cria um papel do banco de dados
+CREATE RULE -- cria uma regra de reescrita
+CREATE SCHEMA -- cria um esquema
+CREATE SEQUENCE -- cria um gerador de seqüência
+CREATE TABLE -- cria uma tabela
+CREATE TABLE AS -- cria uma tabela a partir dos resultados de um comando
+CREATE TABLESPACE -- cria um espaço de tabelas
+CREATE TRIGGER -- cria um gatilho
+CREATE TYPE -- cria um tipo de dado
+CREATE USER -- cria um papel do banco de dados
+CREATE VIEW -- cria uma visão
+DEALLOCATE -- remove um comando preparado
+DECLARE -- define um cursor
+DELETE -- exclui linhas de uma tabela
+DROP AGGREGATE -- remove uma função de agregação
+DROP CAST -- remove uma conversão de tipo de dado
+DROP CONVERSION -- remove uma conversão de codificação
+DROP DATABASE -- remove um banco de dados
+DROP DOMAIN -- remove um domínio
+DROP FUNCTION -- remove uma função
+DROP GROUP -- remove um papel do banco de dados
+DROP INDEX -- remove um índice
+DROP LANGUAGE -- remove uma linguagem procedural
+DROP OPERATOR -- remove um operador
+DROP OPERATOR CLASS -- remove uma classe de operadores
+DROP OWNED -- remove os objetos de banco de dados pertencentes ao papel de banco de dados
+DROP ROLE -- remove um papel do banco de dados
+DROP RULE -- remove uma regra de reescrita
+DROP SCHEMA -- remove um esquema
+DROP SEQUENCE -- remove uma seqüência
+DROP TABLE -- remove uma tabela
+DROP TABLESPACE -- remove um espaço de tabelas
+DROP TRIGGER -- remove um gatilho
+DROP TYPE -- remove um tipo de dado
+DROP USER -- remove um papel do banco de dados
+DROP VIEW -- remove uma visão
+END -- efetiva a transação corrente
+EXECUTE -- executa um comando preparado
+EXPLAIN -- mostra o plano de execução de um comando
+FETCH -- retorna linhas de uma consulta usando um cursor
+GRANT -- define privilégios de acesso
+INSERT -- cria novas linhas na tabela
+LISTEN -- ouve uma notificação
+LOAD -- carrega ou recarrega um arquivo de biblioteca compartilhada
+LOCK -- bloqueia uma tabela
+MOVE -- posiciona o cursor
+NOTIFY -- gerar uma notificação
+PREPARE -- prepara um comando para execução
+PREPARE TRANSACTION -- prepara a transação corrente para uma efetivação de duas fases
+REASSIGN OWNED -- muda o dono dos objetos de banco de dados pertencentes a um papel de banco de dados
+REINDEX -- reconstrói índices
+RELEASE SAVEPOINT -- destrói um ponto de salvamento definido anteriormente
+RESET -- redefine o valor de um parâmetro em tempo de execução com seu valor padrão
+REVOKE -- revoga privilégios de acesso
+ROLLBACK -- interrompe a transação corrente
+ROLLBACK PREPARED -- cancela uma transação previamente preparada para uma efetivação de duas fases
+ROLLBACK TO SAVEPOINT -- desfaz até o ponto de salvamento
+SAVEPOINT -- define um novo ponto de salvamento na transação corrente
+SELECT -- retorna linhas de uma tabela ou de uma visão
+SELECT INTO -- cria uma tabela a partir dos resultados de uma consulta
+SET -- muda um parâmetro de tempo de execução
+SET CONSTRAINTS -- define os modos de verificação da restrição na transação corrente
+SET ROLE -- define o identificador do usuário corrente da sessão corrente
+SET SESSION AUTHORIZATION -- define o identificador do usuário da sessão e o identificador do usuário corrente, da sessão corrente.
+SET TRANSACTION -- define as características da transação corrente
+SHOW -- mostra o valor de um parâmetro de tempo de execução
+START TRANSACTION -- inicia um bloco de transação
+TRUNCATE -- esvazia uma tabela ou conjunto de tabelas
+UNLISTEN -- pára de ouvir uma notificação
+UPDATE -- atualiza linhas de uma tabela
+VACUUM -- limpa e opcionalmente analisa um banco de dados
+VALUES -- computa um conjunto de linhas

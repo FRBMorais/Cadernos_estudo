@@ -1,0 +1,147 @@
+/------------------------------------/
+/          Aplicação WEB             /
+/------------------------------------/
+/            frontend                / 
+/             backend                /
+/------------------------------------/
+/       testes automatizados         /
+/------------------------------------/
+
+
+Motivos para testar nosso código
+1. Reduzir bugs no código existente;
+2. Garantem que novos recursos da aplicação nao quebrem recursos antigos;
+3. Garantem que bugs que foram corrigidos anteriormente não retornem;
+4. Garantem que a refatoração que costumamos fazer não tragam novos bugs;
+
+TDD - Test Driven Development (Desenvolvimento guiado por Testes)
+--> Primeiro escrevemos nosso código;
+--> Escreve a menor quantidade possível para o teste ser positivo;
+--> Então refatora o código para realizar a funcionalidade e testa novamente;
+--> Se o teste for positivo, o recurso é considerado completo.
+
+São princípios que os desenvolvedores seguem:
+- Red;
+- Green;
+- Refactor;
+
+---------------------------------------------------------------------------------
+Assertions (Checagens/ Questionamentos / Afirmações)
+
+assert --> Simples afirmações utilizadas nos testes, validação de uma expressão
+	True --> retorna None
+	False --> retorna um erro do tipo AssertionError
+	OBS: podemos personalizar esse erro
+
+syntax
+assert <expressão lógica>, '<mensagem que retornará no erro caso falso>'
+
+exemplo:
+def soma_numeros_positivos(a, b):
+	assert a > 0 and b > 0, 'ambos números precisam ser positivos'
+	return a + b
+
+OBS: códigos executados utilizando a flag -O não levaram em consideração os asserts
+Exemplo: python -O nome_do_scrip.py
+
+
+------------------------------------------------------------------------------------
+Doctests
+------------------------------------------------------------------------------------
+Doctests são testes dentro das docstring s das funções/métodos Python
+p/ rodar um doctest, temos que fazer no terminal
+python -m doctest -v <nome_do_modulo>.py
+
+exemplo:
+def soma(a, b):
+    """soma os números a e b
+    >>> soma(1, 2)
+    3
+    """
+    return a + b
+
+Peculiaridades esquisitas 
+OBS: Dentro do doctest o  python nao reconhece string com aspas duplas, precisa ser aspas simples
+OBS: Espaços e tabs podem fazer o teste falhar (Pycharm corrige isso, outros não)
+
+------------------------------------------------------------------------------------
+Introdução ao módulo Unittest
+------------------------------------------------------------------------------------
+
+Unittest --> Testes unitários
+
+Teste unitário é a forma de se testar unidades individuais de código fonte.
+
+Unidades individuais podem ser: funções, métodos, classes, módulos etc.
+
+Objetivo: Mostrar que cada unidade atende corretamente suas especificações
+
+OBS: Teste unitário não é específico da linguagem Python
+
+
+
+
+O teste é independente da nossa aplicação, um arquivo separado testes.py
+----------------------- testes.py ----------------------------------------------------
+import unittest
+
+from <nome_da_modulo_testado> import <unidades>
+exemplo.
+from atividades import comer, dormir  # onde comer e dormir são funções do módulo atividades
+
+class <Nome_módulo>Testes(unittest.TestCase):  # TestCase, possui os assertions que vamos herdar
+    
+    def setUp(self):  # Setup dos testes1, 2, ..., n  # Evita repetição de código
+ 	"""
+	Podemos instanciar uma classe com os parâmetros desejados, por exemplo
+        """
+        pass
+
+    def test_<unidade>(self):  # Teste1
+        self.assertEqual(
+	     <unidade>(parâmetros), <resposta esperada>
+	)
+
+    def test_<unidade>(self):  # Teste2
+        self.assertEqual(
+	     <unidade>(parâmetros), <resposta esperada>
+	)
+    def tearDown(self):  # Setup final dos testes  # Evita repetição de código
+ 	"""
+	Podemos fechar um banco de dados, ou zerar alguma variável 
+        """
+        pass
+
+Tabela de assertions  https://docs.python.org/3/library/unittest.html
+assertEqual(a, b)    <---------------------->          a == b
+assertNotEqual(a, b) <---------------------->          a != b
+assertTrue(x)	     <---------------------->          bool(x) is True
+assertFalse(x)	     <---------------------->          bool(x) is False
+assertIs(a, b)	     <----------------------> 	       a is b
+assertIsNot(a, b)    <---------------------->          a is not b
+assertIsNone(x)      <---------------------->          x is None
+assertIsNotNone(x)   <---------------------->          x is not None
+assertIn(a, b)       <---------------------->          a in b
+assertNotIn(a, b)    <---------------------->          a not in b
+assertIsInstance(a, b)    <---------------------->     isinstance(a, b)
+assertNotIsInstance(a, b) <---------------------->     not isinstance(a, b)
+
+
+if __name__ == '__main__':         # --> No terminal o programa irá ser testado se executarmos como main 
+    unittest.main()
+
+Como rodar os testes no terminal 
+
+python nome_do_modulo.py
+python nome_do_modulo.py -v  # --> de forma detalhada
+
+OBS: interessante colocar docstrings nos testes
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+SELECT -->  Instrui o banco de dados para retornar a informação como um conjunto de registros
+
+SELECT [predicado { * | tabela.* | [tabela.]campo1 [AS alias1] [, [tabela.]campo2
+[AS alias2] [, ...]]}
+FROM expressãotabela [, ...] [IN bancodedadosexterno]
+[WHERE... ]
+[GROUP BY... ]
+[HAVING... ]
+[ORDER BY... ]
+[WITH OWNERACCESS OPTION]
+
+---------------------------------------------------------------------------------------------------
+INSERT INTO --> Adiciona um ou vários registros a uma tabela,
+
+--> Consulta anexação com  um único registro
+INSERT INTO destino [(campo1[, campo2[, ...]])] VALUES (valor1[, valor2[, ...])
+
+--> Consulta anexação com vários registros;
+INSERT INTO destino [IN bancodedadosexterno] [(campo1[, campo2[, ...]])]
+SELECT [origem.]campo1[, campo2[, ...] FROM expressãodetabela
+
+---------------------------------------------------------------------------------------------------
+UPDATE --> Cria uma consulta atualização que altera os valores dos campos 
+em uma tabela especificada com base em critérios específicos
+
+UPDATE tabela SET valornovo WHERE critério;
+
+---------------------------------------------------------------------------------------------------
+DELETE --> Cria uma consulta exclusão que remove registros de uma ou mais 
+tabelas listadas na cláusula FROM que satisfaz a cláusula WHERE.
+
+DELETE [tabela.*] FROM tabela WHERE critério
+
+

@@ -1,0 +1,12 @@
+Javascript
+
+HTML --> Especificar o conteúdo da página;
+CSS --> Apresentar a apresentação dessas páginas;
+Javascript --> Espeficar o comportamento delas;
+
+1. Linguagem de alto nível;
+2. Dinâmica;
+3. Interpretada;
+4. Não tipada.
+
+comentário --> //
