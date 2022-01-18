@@ -1,0 +1,11 @@
+import pygame --> importa a bilbioteca pygame
+
+pygame.init() --> Inicializa a bliblioteca
+ 
+tela = pygame.display.set_mode((width, height), flags, depth)
+
+pygame.draw.    --> desenha figuras na tela especificada e a posiciona
+
+Como simular movimento ?? realocamos a imagem em outro ponto, redesenhando, e apagamos a imagem anterior
+na função display, temos a função fill
+tela.fill((r, g, b))  --> pinta a tela da cor desejada, podemos utilizar como uma borracha e simular o movimento 

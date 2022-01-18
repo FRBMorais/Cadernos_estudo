@@ -1,0 +1,71 @@
+Pygame é uma biblioteca de jogos multiplataforma (independente do sistema operacional)
+Escrito em Linguagem C e Python
+
+Pygame se baseia na ideia de que as tarefas mais intesivas a nível computacional da lógica principal, 
+ou seja, o uso de memória e CPU (úteis para processar imagens e sons)
+são tratadors pelo próprios código do Pygame, e não pelo código do seu jogo.
+--------------------------------------------------------------------------------------------------------------------------------
+EVENTOS ESSENCIAIS
+--------------------------------------------------------------------------------------------------------------------------------
+Surface --> São as superfícies em 2D ou 3D onde se desenha o jogo, podendo preencher uma área com uma
+ cor ou mudar a cor da superfície dependendo da posição, 
+e outros recursos como transparência.
+
+Display --> São os eventos para a manipulação da tela do jogo, podendo atualizar o conteúdo da tela,
+retornar a superfície que representa a tela ou configurar o tamanho da tela.
+
+draw --> são os desenhos na superfície, em linha, cículo, retângulo ou polígono.
+
+image --> são as imagens, podendo ler ou gravar as imagens
+
+event --> são os eventos de um jogo, algumas operações como o poll() retorna o próximo evento da 
+fila de eventos ou post() que coloca um evento na fila
+
+mixer --> trabalha com os sons do jogo
+
+Clock --> trabalho com os tempo dos quadros do jogo
+
+transform --> podem rotacionar, espelhar, modificar ou cortar as superfícies do jogo
+
+sprite --> é uma imagem bi-dimensional que faz parte de uma cena maior, isto é, os componentes que aparecem no jogo. 
+Podendo se dividir em Sprite e Group, a classe Group serve para agrupar vários Sprites.
+
+--------------------------------------------------------------------------------------------------------------------------------
+COLISÃO
+--------------------------------------------------------------------------------------------------------------------------------
+No Pygame existem dois recursos para o tratamento de colisões:
+1. spritecollide --> detecta a colisão do Sprite com os elementos do grupo
+2. groupcollide --> detecta a colisão dos "Sprites" de cada "Group" do jogo
+
+--------------------------------------------------------------------------------------------------------------------------------
+VISÃO GERAL DO CÓDIGO
+
+cdrom: gerencia o dispositivo de cdrom e a execução de áudio
+
+cursors: carrega imagem de cursores como mouse
+
+display: controla a exibição da tela ou janela
+
+draw: desenha formas simples sobre uma superfície
+
+event: Controla eventos e a fila de eventos
+
+font: cria e renderiza fontes Truetype
+
+image: grava e carrega imagens
+
+joystick: controla dispositivos joysticks
+
+key: controla o teclado
+
+mouse: controla o mouse
+
+movie: executa filmes no formato mpeg
+
+sndarray: manipula sons com Numeric
+
+surarray: manipula imagens com Numeric
+
+time: controla o tempo dos eventos
+
+transform: escalar, rotacionar e girar imagens
