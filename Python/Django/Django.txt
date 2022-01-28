@@ -1,0 +1,99 @@
+
+Como testar?? vá até a pasta raíz e execute o comando
+python manage.py runserver --> aparece uma aplicação dizendo se a nossa instalação foi realizada com sucesso
+
+-------------------------------------------------------------------------------------------------------
+ESTRUTURA INICIAL APP
+-------------------------------------------------------------------------------------------------------
+app no Django é uma aplicação Web que faz alguma coisa
+Um projeto pode ter vários apps e um app pode estar presente em diversos projetos
+
+django-admin.py startapp <nome_app>
+
+dentro do diretório <nome_app> criamos uma pasta static ( ), e a pasta templates
+- static/
+    - website/ --> esta pasta website dentro da pasta static faz o Django entender onde buscar os recursos quando você precisar
+        -CSS/
+        -img/
+        -js/
+
+- templates/
+    - website/ --> idem
+        - _layouts/
+
+-------------------------------------------------------------------------------------------------------
+ESTRUTURA GERAL PROJETO APP
+-------------------------------------------------------------------------------------------------------
+/<nome_projeto>
+    - __init__.py
+    - settings.py
+    - urls.py
+    - wsgi.py
+/<nome_app>
+    - templates/
+        - website/ --> esta pasta website dentro da pasta static faz o Django entender onde buscar os recursos quando você precisar
+            - _layouts/
+    - static/
+        - website/ --> idem
+            -CSS/
+            -img/
+            -js/
+    - migrations/
+    - __init__.py
+    - admin.py
+    - apps.py
+    - migrations.py
+    - models.py
+    - tests.py
+    - views.py
+- manage.py
+
+
+
+Para que o Django gerencie esse app é necessário adicioná-lo a lista de apps instalados
+fica em settings.py
+tem uma lista
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    ....
+    '<nome_projeto>',
+    '<nome_app>'
+
+]
+
+desse modo eles serão gerenciados pelo Django
+
+-------------------------------------------------------------------------------------------------------
+REORGANIZAÇÃO DA ESTRUTURA
+-------------------------------------------------------------------------------------------------------
+/<nome_projeto>
+    - __init__.py
+    - settings.py
+    - urls.py
+    - wsgi.py
+    - models.py
+/<nome_app>
+    - templates/
+    - static/
+    - __init__.py
+    - admin.py
+    - apps.py
+    - tests.py
+    - views.py
+- manage.py
+
+passamos o arquivo models.py do app para o projeto, pois os arquivos comuns ao projeto vão ficar
+centralizados no app principal (geralmente temos apenas um arquivo models.py para o projeto todos)
+
+a partir disso, podemos apagar /migrations e o migrations.py, pois estes serão gerenciados pelo app principal
+
+-------------------------------------------------------------------------------------------------------
+CAMADA MODEL
+-------------------------------------------------------------------------------------------------------
+
+1. É onde edescrevemos os campos e comportamentos das entidades que irão compor nosso sistema
+2. Reside a lógica de acesso aos dados da nossa aplicação
+
+Nela vamos descrever em formas de classes, as entidades do nosso sistema, para que todos os restantes (Template e View)
+façam sentido

@@ -1,0 +1,17 @@
+Github 
+Issue --> Organização do projeto
+1. Podemos reportar e controlar os problemas e bugs;
+2. Podemos sugerir melhorias no código e pedidos de novas funcionalidades;
+3. Podemos organizar quaisquer coisas que façam sentido para o projeto.
+
+Para trabalhar em alguma issue, devemos:
+
+1. Criar uma cópia do repositório através do "fork"
+2. Depois disso devemos adicionar o repositório do github como nosso repositório remoto
+3. Realizamos o commit 
+
+OBS: no windows, ele salva a senha e usuário do github, se formos trabalhar em outro usuário, devemos apagar a senha salva
+
+Para solicitarmos essa mudança realizada para o dono do proejto, devemos fazer um pull request
+
+O dono do repositório deve fazer o merge do pull request
