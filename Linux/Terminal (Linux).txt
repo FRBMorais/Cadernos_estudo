@@ -18,3 +18,9 @@ criar diretórios
 -----------------------------------------------------------------------------
 mkdir <nome_diretório> --> cria um diretório no diretório atual
 
+-----------------------------------------------------------------------------
+criar arquivos
+-----------------------------------------------------------------------------
+cat > <nome_arquivo> --> Cria um arquivo. exemplo: programa.js, style.css, index.html
+
+
