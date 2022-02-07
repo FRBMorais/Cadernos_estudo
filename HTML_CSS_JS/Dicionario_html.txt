@@ -1,0 +1,96 @@
+DICIONÁRIO DE TAGS HTML MAIS UTILIZADAS
+
+
+<!DOCTYPE html>  --> Indica a versão do html
+
+<html>  --> Conteúdo do código html
+
+<head>  --> Informações de cabeçalho
+
+<body>  --> envolve todo o corpo do Conteúdo
+
+<!-->  --> Comentário
+
+<title>  --> Título da página web (na aba)
+
+<meta>  --> Informações do documento (metadados)
+
+<link>  --> Inclusão de outros documentos
+
+<style>  --> Estilização do contéudo indicado
+
+<script>  --> Conteúdo de linguagem script
+
+<p>  --> Parágrafo
+
+<img>  --> imagem
+
+<pre>  --> texto pré formatado (com enter, tab)
+
+<h1>  --> cabeçalho escrito (vai de h1 - h6, sendo
+h1 o maior tamanho de letra e h6 o menor)
+
+<br>  --> quebra de linha
+
+<main>  --> conteúdo principal do corpo
+
+<header>  --> cabeçalho da página
+
+<footer>  --> Rodapé da página
+
+<section>  --> Define uma seção da página
+
+<article>  --> define um artigo na página
+
+<aside>  --> Contéudo "ao lado" (lateraliza)
+
+<nav>  --> Seção de links de navegação
+
+<div>  --> define uma divisão na página
+
+<form>  --> define um formulário
+
+<input>   --> Caixa de entrada de dados
+
+<textarea>  --> campo de texto
+
+<select>  --> Seleção de opções
+
+<option>  --> define uma opção
+
+<label>  --> legenda para os campos
+
+<table>  --> Cria uma tabela
+
+<caption>  --> legenda da tabela
+
+<tr> --> linha da tabela (table row)
+
+<th>  --> Célula d ecabeçalho
+
+<td  --> Célula de dados
+
+<ol>  --> lista ordenada (ordened list)
+
+<ul>  --> lista não ordenada  (unorderned list)
+
+<menu>  --> Menu com lista opções
+
+<dir>  --> Lista de diretórios
+
+<dl>  --> lista de descrição
+
+<dt>  --> termo a ser descrito
+
+<dd>  --> descrição
+
+<b>  --> negrito
+
+<i>  --> itálico
+
+<u>  --> sublinhado
+
+<strong>  --> maior ênfase no texto em negrito
+
+<em>  --> maior ênfase no texto em itálico
+

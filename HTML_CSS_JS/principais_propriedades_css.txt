@@ -1,0 +1,113 @@
+DICIONÁRIO DE PROPRIEDADES CSS
+
+
+
+FONTES
+FONT --------------- É POSSÍVEL UTILIZAR OS ATALHOS PARA DEFINIR TUDO EM UMA SÓ PROPRIEDADE
+
+
+font-family  --> família de fonte utilizada (ex: serif)
+
+font-style --> estilo usado na fonte (ex: italic)
+
+font-size  --> tamanho da fonte (ex: 12px)
+
+font-weight  --> peso da fonte (ex: bold)
+
+font-variant  --> altera a variante da fonte (ex: small-caps)
+
+text-ident  --> recuo a esquerda da primeira linha (ex: 3em)
+
+text-align  --> alinhamento do texto  (ex: left)
+
+test-decoration  --> efeitos decorativos  (ex: underline)
+
+world/lettter-spacing  --> espaçamento entre palavras/letras (ex: 1 em)
+
+
+
+CORES E FUNDOS
+BACKGROUND --------------- É POSSÍVEL UTILIZAR OS ATALHOS PARA DEFINIR TUDO EM UMA SÓ PROPRIEDADE
+
+
+color  --> cor do texto (ex: #F3F3F3)
+
+background-color  --> cor do fundo  (ex: black)
+
+background-image  --> imagem de fundo (ex: url(http...))
+
+background-repeat  --> define se a imagem de fundo repetirá  (ex: no repeat)
+
+background-attachment  --> define se a imagem de fundo será fixa ou moverá conforme a página (ex: scroll)
+
+background-position  --> posição da imagem de fundo (ex: right top)
+
+
+BORDAS
+BORDER-WIDTH --------------- É POSSÍVEL UTILIZAR OS ATALHOS PARA DEFINIR TUDO EM UMA SÓ PROPRIEDADE
+BORDER-COLOR --------------- É POSSÍVEL UTILIZAR OS ATALHOS PARA DEFINIR TUDO EM UMA SÓ PROPRIEDADE
+BORDER-STYLE --------------- É POSSÍVEL UTILIZAR OS ATALHOS PARA DEFINIR TUDO EM UMA SÓ PROPRIEDADE
+BORDER
+
+
+A
+border-top-width
+border-right-width           Largura das bordas nos quatro quadrantes
+border-left-width            (ex: medium)
+border-bottom-width
+
+B
+border-top-color
+border-right-color           Cores das bordas nos quatro quadrantes
+border-left-color            (ex: black)
+border-bottom-color
+
+C
+border-top-style
+border-right-style           Estilos das bordas nos quatro quadrantes
+border-left-style            (ex: dotted)
+border-bottom-style
+
+
+MARGENS E ESPAÇAMENTOS
+MARGIN --------------- É POSSÍVEL UTILIZAR OS ATALHOS PARA DEFINIR TUDO EM UMA SÓ PROPRIEDADE
+PADDING --------------   ''
+
+A
+margin-top
+margin-right                  Tamanho da margem para cada um dos quadrantes
+margin-bottom                 (ex: 2em)
+margin-left
+
+B
+padding-top       
+padding-right                  Distância utilizada para espaçamento nos quatro quadrantes
+padding-bottom                 (ex: 2em)
+padding-left
+
+
+FORMATAÇÃO VISUAL
+display  --> forma de exibição do contéudo  (ex: inline)
+position  --> posicionamento  (ex: absolute)
+float  --> posicionamento adjacente à esquerda ou à direita do elemento  (ex: absolute)
+clear  --> controle de limpeza do elemento float (ex: left)
+direction  --> define a direção do texto de direita pra esquerda ou esqueda pra direita (ex: ltr)
+min-width/height  --> largura/altura mínima  (ex: 200 px)
+max-width/height  --> largura/altura máxima  (ex: 200 px)
+top
+right             Distância do elemento com relação à extremidade
+bottom            de seu elemento pai
+left              (ex: 20 px)
+
+
+CONTORNOS E TABELAS
+cursor  --> específica o cursor (ex: pointer)
+outline width  --> largura da linha de contorno  (ex: thin)
+outline color  --> cor da linha de contorno  (ex: #F22)
+outline style  --> estilo da linha de contorno  (ex: dotted)
+caption-side  --> posição do título da tabela (ex: bottom)
+table-layout  --> define layout automático  (ex: fixed)
+border-collapse  --> modelo de borda usado  (ex: collapse)
+clear --> controle de limpeza do elemento float  (ex: left) 
+border-spacing  --> distância entre célular (ex: 15pt)
+empty-cells  --> visibilidade de células vazias  (ex: hide)
