@@ -1,0 +1,28 @@
+Database --> Entidade maior
+
+Database é um repositório, que armazena dados e que podem ser recuperados;
+Bancos de dados relacionais --> pois possuem ligações entre as tabelas;
+
+Tabela  --> Principal entidade das databases,
+            apresenta campos e propriedades definidas;
+
+linha da tabela --> Registros;
+coluna da tabela --> Campos;
+
+Chave primária --> garante unicidade nos campos 
+
+As tabelas podem se relacionar, através de chaves estrangeiras
+ 
+Um grupo de tabelas pode ser agrupado como um esquema de acordo com sua categoria
+
+Trigger --> avisos caso algo aconteça
+
+
+hierárquia....
+
+DATABASE
+    SCHEMAS (CATEGORIZA AS TABELAS)
+        TABELA1
+            REGISTROS X CAMPOS (PRÉ-DEFINIDOS(TIPOS))
+        TABELA2
+            ...

@@ -1,0 +1,64 @@
+Tipos inteiros
+
+             Bytes
+TINYINT         1 
+SMALLINTY       2
+MEDIUMINT       3   
+INT             4
+BIGINT          8
+
+propriedade UNSIGNED --> Não permite sinal no número (dobra a quantidade de valores)
+
+--------------------------------------------------------------------------------------
+Pontos Flutuantes
+            Bytes              OBS: FLOAT(a, b) --> valores serão arredondados para esse formato
+FLOAT           4               a --> número de digitos
+DOUBLE          8               b --> quantidade de casas decimais
+
+--------------------------------------------------------------------------------------
+Tipo    BIT
+
+BIT(1) --> 0, 1
+BIT(2) --> 01, 00, 10, 00
+...
+
+---------------------------------------------------------------------------------------
+ZEROFILL --> Preenche com zeros ou espaços
+INT(4) --> 5  
+ex: 5 --> 0005
+
+---------------------------------------------------------------------------------------
+AUTO_INCREMENT --> 1, 2, 3, 4
+
+---------------------------------------------------------------------------------------
+DATA E HORA
+
+DATE  --> 1000-01-01 até 9999-12-31
+DATETIME --> 1000-01-01 00:00:00 até 9999-12-31 23:59:59
+TIMESTAP --> o de cima com fuso-horário
+TIME --> -838:59:59 até 839:59:59
+YEAR --> 1901  até 2155
+
+---------------------------------------------------------------------------------------
+STRINGS
+
+CHAR  --> Cadeia de caracteres com valor fixo (0 - 255)
+VARCHAR  --> Cadeia de caracteres com valor variável (0 - 255)
+
+
+BLOB --> Binário longo  (ex: imagens)
+TINYBLOB, BLOB, MEDIUMBLOB, LONGBLOB
+
+TEXT --> Texto longo
+TINYTEXT, TEXT, MEDIUMTEXT, LONGTEXT
+
+ENUM --> Permite armazenar uma lista pré-definida de valores
+ex: SIZE ENUM('x-small', 'x-salada', ..., 'medium')
+
+Atributos dos campos STRINGS
+SET | COLLATE --> que tipo de caracteres serão suportados
+
+---------------------------------------------------------------------------------------
+SPACIAL
+GEOMETRY, POINT, LINESTRING, POLYGON
+

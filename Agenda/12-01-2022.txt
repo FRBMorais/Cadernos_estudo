@@ -1,8 +1,0 @@
-Estágio
-Relação de materiais --> precificar os componentes para solicitação de compra da FAU --> Triclops
-ok (perfis extrudados)
-
-Número de conectores da ciclops --> ok
-
-Refazer a análise estática(dinâmica), seguindo as orientações do professor
- 

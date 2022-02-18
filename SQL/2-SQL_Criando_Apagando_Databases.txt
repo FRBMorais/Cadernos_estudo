@@ -1,0 +1,11 @@
+CREATE {DATABASE | SCHEMA} [IF NOT EXISTS] <nome_database>;
+
+exemplo:
+CREATE DATABASE HortFruit;
+
+
+-------------------------------------------------------------
+DROP DATABASE <nome_database>;
+
+exemplo:
+DROP DATABASE HortFruit;

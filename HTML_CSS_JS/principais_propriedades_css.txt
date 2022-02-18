@@ -1,10 +1,11 @@
 DICIONÁRIO DE PROPRIEDADES CSS
-
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+p/ posicionamento dos elementos
 
 
 FONTES
 FONT --------------- É POSSÍVEL UTILIZAR OS ATALHOS PARA DEFINIR TUDO EM UMA SÓ PROPRIEDADE
-
+https://fonts.google.com/
 
 font-family  --> família de fonte utilizada (ex: serif)
 
@@ -28,7 +29,7 @@ world/lettter-spacing  --> espaçamento entre palavras/letras (ex: 1 em)
 
 CORES E FUNDOS
 BACKGROUND --------------- É POSSÍVEL UTILIZAR OS ATALHOS PARA DEFINIR TUDO EM UMA SÓ PROPRIEDADE
-
+https://www.devmedia.com.br/css-background/38313
 
 color  --> cor do texto (ex: #F3F3F3)
 
